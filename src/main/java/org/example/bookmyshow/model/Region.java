@@ -1,4 +1,12 @@
 package org.example.bookmyshow.model;
 
-public class Region {
+import jakarta.persistence.Entity;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+@Entity
+public class Region extends BaseModel {
+    private String name;
 }
