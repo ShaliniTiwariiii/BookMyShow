@@ -16,4 +16,6 @@ private Show show;
 private Seat seat;
     @Enumerated
 private ShowSeatStatus status;
+    @ManyToOne
+    private Booking booking;
 }
