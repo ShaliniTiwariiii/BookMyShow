@@ -18,5 +18,8 @@ public class Screen extends BaseModel{
     @OneToMany
     @JoinColumn(name="screen_id")
     private List<Seat>seats;
+    @ManyToOne
+    @JoinColumn(name = "theatre_id")
+    private Theatre theatre;
 
 }
